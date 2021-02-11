@@ -21,7 +21,7 @@ You should see something like:
     - should have a name
     - should have a color
     - should be white as default
-    - should refute isWhite
+    - should refute checkColor
     - should say sparklying stuff
 
 
