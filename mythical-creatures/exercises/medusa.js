@@ -7,8 +7,17 @@ class Medusa {
     this.name = name;
     this.statues = [];
   }
-  gazeAtVictim(name) {
-    this.statues.push(name)
+  gazeAtVictim(person) {
+    var statue = new Statue(person.name)
+    if (this.statues.length < 3) {
+      this.statues.push(statue);
+    } else {
+      var freePerson = new Person(this.statues[0].name)
+      freePerson.mood = "relieved"
+      this.statues.shift()
+      this.statues.push(statue);
+      return freePerson
+  }
   }
 };
 
