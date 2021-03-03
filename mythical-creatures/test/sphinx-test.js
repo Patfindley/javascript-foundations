@@ -91,7 +91,7 @@ describe('Sphinx', () => {
     sphinx.collectRiddle(riddle2);
     sphinx.collectRiddle(riddle3);
     sphinx.attemptAnswer('An envelope');
-
+    console.log(sphinx.riddles);
     assert.deepEqual(sphinx.riddles, [riddle1, riddle2]);
   });
 
