@@ -155,7 +155,7 @@ describe('Golfer', function () {
     assert.equal(shot2, 'Booyah!');
 
     var shot3 = golfer1.whatYaShoot(2);
-    assert.equal(golfer1.frustration, 30);
+    assert.equal(golfer1.frustration, 20);
     assert.equal(shot3, 'Doh!');
 
     var shot4 = golfer1.whatYaShoot(-2);

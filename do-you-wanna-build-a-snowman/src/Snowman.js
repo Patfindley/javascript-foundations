@@ -3,13 +3,15 @@ class Snowman {
     this.carrots = details.carrots;
     this.coal = details.coal;
     this.buttons = details.buttons;
-    this.snowballs = details.snowballs;
+    this.snowballs =details.snowballs;
     this.magicHat = false;
   }
 
   canWearMagicHat() {
-    if (this.coal >= 2 && this.buttons >= 5 && this.carrots >= 1 && this.snowballs >= 2) {
-      this.magicHat = true;
+    if (this.coal < 2 || this.buttons < 5 || this.carrots < 1 || this.snowballs < 2) {
+      return
+    } else {
+    this.magicHat = true;
     }
   }
 }
